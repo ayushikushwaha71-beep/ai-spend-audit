@@ -67,3 +67,56 @@ Day 2 — 2026-05-08
 - Complete the first version of the pricing dataset using official vendor pricing pages.  
 - Start building the audit engine with rule-based savings recommendations.  
 - Write initial unit tests for savings calculations.
+
+
+Day 3 — 2026-05-09
+
+**Hours worked:** 7
+
+**What I did:**  
+- Completed the initial production-ready folder structure for the AI Spend Audit project.  
+- Organized the repository into clear sections for:
+  - frontend routes
+  - reusable components
+  - pricing datasets
+  - audit logic
+  - prompts
+  - testing
+  - evaluation documents
+- Added all required documentation files mentioned in the assignment brief:
+  - ARCHITECTURE.md
+  - GTM.md
+  - ECONOMICS.md
+  - USER_INTERVIEWS.md
+  - METRICS.md
+  - LANDING_COPY.md
+  - PROMPTS.md
+  - TESTS.md
+- Cleaned up Git history and fixed repository structure issues caused by an accidental nested Git repository.
+- Started implementing the pricing dataset structure using official vendor pricing sources.
+- Created the initial audit engine files:
+  - auditEngine.ts
+  - savingsCalculator.ts
+  - recommendationEngine.ts
+- Began drafting the recommendation logic for:
+  - unnecessary team plans
+  - per-seat overspending
+  - alternative AI tool recommendations
+  - API vs subscription cost comparisons
+- Set up the testing folder and planned test coverage for audit calculations and edge cases.
+- Added `.env.example` and improved `.gitignore` to avoid exposing secrets and generated files.
+
+**What I learned:**  
+- A clean repository structure significantly improves maintainability and makes the project easier to review both manually and programmatically.  
+- Separating pricing data, recommendation logic, and UI components early prevents unnecessary refactoring later.  
+- The assignment is much more focused on product thinking and credibility of recommendations than just frontend polish.
+
+**Blockers / what I'm stuck on:**  
+- Some AI tools have complicated pricing structures that depend on token usage instead of fixed subscriptions, making accurate comparison logic more difficult.  
+- Need to decide how aggressive the audit recommendations should be without making unrealistic savings claims.
+
+**Plan for tomorrow:**  
+- Implement the spend input form UI and local persistence.  
+- Add the first working version of the audit calculation flow.  
+- Start building the audit results page with savings breakdown cards.  
+- Add initial unit tests for savings calculations and recommendation rules.
