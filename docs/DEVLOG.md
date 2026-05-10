@@ -120,3 +120,50 @@ Day 3 — 2026-05-09
 - Add the first working version of the audit calculation flow.  
 - Start building the audit results page with savings breakdown cards.  
 - Add initial unit tests for savings calculations and recommendation rules.
+
+
+ Day 4 — 2026-05-10
+
+**Hours worked:** 8
+
+**What I did:**  
+- Implemented the initial spend input form UI for the AI Spend Audit application.  
+- Added core input fields for:
+  - AI tool selection
+  - subscription plan
+  - monthly spend
+  - number of seats
+  - team size
+  - primary use case
+- Started implementing local persistence logic so form data can survive page reloads and accidental refreshes.
+- Built the first working version of the audit calculation flow connecting form inputs to recommendation logic.
+- Added initial savings calculation logic for:
+  - unnecessary team plans
+  - oversized subscriptions
+  - downgrade recommendations
+  - alternative tool suggestions
+- Began designing the audit results page with:
+  - savings breakdown cards
+  - recommendation summaries
+  - total monthly and annual savings sections
+- Started writing automated unit tests for:
+  - savings calculations
+  - recommendation engine rules
+  - edge-case audit scenarios
+- Refactored some audit logic into separate utility files to improve maintainability and testing.
+- Continued improving repository organization and commit discipline throughout development.
+
+**What I learned:**  
+- Persisting form state significantly improves user experience, especially for longer multi-input workflows.  
+- Separating audit calculations from UI rendering makes testing and debugging much easier.  
+- Even relatively simple recommendation systems require careful handling of edge cases to avoid unrealistic savings suggestions.
+
+**Blockers / what I'm stuck on:**  
+- Need to improve the consistency of recommendation logic across different pricing models, especially API-based billing versus seat-based subscriptions.  
+- Still deciding how detailed the audit explanations should be without overwhelming users with too much financial information.
+
+**Plan for tomorrow:**  
+- Connect pricing datasets directly into the audit engine calculations.  
+- Improve the audit results UI with clearer recommendation explanations and better visual hierarchy.  
+- Implement lead capture flow and backend storage setup.  
+- Continue expanding automated test coverage for the audit engine.
